@@ -1,0 +1,9 @@
+Sistema que crea automaticamente la BASE DE DATOS e importa a esa base de datos el script (.sql) en el cual uno solo debe de seleccionar.
+
+Los pasos a seguir son:
+
+1- Puedas escribir el nombre de la base de datos que deseas crear o usar.
+
+2- Se cree la base de datos si no existe.
+
+3- Luego, se importe el archivo .sql seleccionado a esa base de datos.

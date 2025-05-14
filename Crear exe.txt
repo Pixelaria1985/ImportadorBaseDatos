@@ -1,0 +1,29 @@
+Para crear un .py en un .exe seguir los siguientes pasos:
+
+--Requisitos previos--
+
+1- Tener Python instalado: Puedes verificarlo con python --version en la terminal.
+
+2- Instalar PyInstaller: "pip install pyinstaller" o "py -m pip install pyinstaller"
+
+
+--Convertir el archivo .py en .exe--
+
+1- Abre la terminal o CMD en la carpeta donde está tu archivo .py.
+
+2- Ejecuta el siguiente comando: "pyinstaller --onefile tu_archivo.py"
+Esto lo que hace es generar un unico archivo .exe
+
+3- Si tu programa tiene una interfaz gráfica y no quieres que se abra una ventana de consola, usa:
+"pyinstaller --onefile --noconsole tu_archivo.py"
+
+--¿Dónde está el .exe?--
+Después de la conversión, encontrarás el archivo .exe en la carpeta dist/.
+
+--Notas útiles--
+
+1- Si tu script usa archivos externos (imágenes, datos, etc.), asegúrate de que estén correctamente referenciados con rutas absolutas o usando os.path.
+
+2- Puedes personalizar más el ejecutable (ícono, nombre, etc.) con opciones como:
+
+"pyinstaller --onefile --icon=icono.ico tu_archivo.py"
